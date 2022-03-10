@@ -9,8 +9,8 @@ function App() {
   return (
     <CryptoProvider>
       <div className="App">
-        <Header />
         <Router>
+          <Header />
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/coins/:id" element={<Cryptopage />} />

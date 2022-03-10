@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 import CryptoContext from "../context/CryptoContext";
 import {
@@ -32,7 +33,9 @@ function Header() {
         <Container>
           <Toolbar>
             <Typography className="title">
-              <p>Crypto Coins</p>
+              <Link to={"/"}>
+                <p>Crypto Coins</p>
+              </Link>
             </Typography>
 
             <Select
