@@ -1,0 +1,22 @@
+.tableHead {
+  background: #eebc1d;
+  text-align: center;
+}
+.coinTable {
+  display: flex;
+  flex-direction: column;
+}
+.coinSymbolTable {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.coinNameTable {
+  color: darkgray;
+}
+.plus {
+  color: green;
+}
+.min {
+  color: red;
+}
