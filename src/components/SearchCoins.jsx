@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { TextField } from "@material-ui/core";
-function SearchCoins() {
+function SearchCoins({ onFilter }) {
   const [search, setSearch] = useState("");
   const handleSearch = (e) => {
     setSearch(e.target.value);
-    console.log(search);
+    onFilter(search);
   };
   return (
     <TextField
