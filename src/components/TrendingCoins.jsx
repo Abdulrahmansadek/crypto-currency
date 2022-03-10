@@ -15,13 +15,12 @@ function TrendingCoins() {
   };
   useEffect(() => {
     fetchTrendCoins();
-    console.log(trending);
   }, [currency]);
 
   const items = trending.map((coin) => {
     let changePrecentage = coin.price_change_percentage_24h >= 0;
     return (
-      <Link to={`/coin/${coin.id}`} className="coinItem">
+      <Link to={`/coins/${coin.id}`} className="coinItem">
         <img src={coin.image} alt={coin.name} className="coinImage" />
         <span className="currencySymbol">
           {coin.symbol}
@@ -32,8 +31,8 @@ function TrendingCoins() {
           </span>
         </span>
         <span className="coinPrice">
-          {coin.current_price.toFixed(2)}
           {symbol}
+          {coin.current_price.toFixed(2)}
         </span>
       </Link>
     );
