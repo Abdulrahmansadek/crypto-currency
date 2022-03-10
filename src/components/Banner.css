@@ -1,0 +1,29 @@
+.banner {
+  background-image: url("../assets/banner2.jpeg");
+  height: 70vh;
+}
+.bannerContent {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25;
+  justify-content: space-around;
+}
+.bannerTitle {
+  display: flex;
+  height: 40%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 90px;
+}
+.bannerTitle h1 {
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+.paragraph {
+  margin-top: 20px;
+  color: darkgray;
+  text-transform: capitalize;
+  font-family: "Montserrat";
+}

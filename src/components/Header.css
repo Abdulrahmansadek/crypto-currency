@@ -6,7 +6,12 @@
 }
 .title {
   flex: 1;
+
+  cursor: pointer;
+}
+.title p {
+  font-size: 2rem;
   color: gold;
   font-weight: bold;
-  cursor: pointer;
+  font-family: "Montserrat";
 }

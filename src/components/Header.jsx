@@ -31,7 +31,9 @@ function Header() {
       <AppBar position="static" color="transparent">
         <Container>
           <Toolbar>
-            <Typography className="title">Crypto Coins</Typography>
+            <Typography className="title">
+              <p>Crypto Coins</p>
+            </Typography>
 
             <Select
               variant="outlined"
