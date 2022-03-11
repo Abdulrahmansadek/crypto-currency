@@ -37,6 +37,7 @@ function Chart({ id }) {
     container: {
       width: "75%",
       display: "flex",
+      height: 800,
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
@@ -45,6 +46,14 @@ function Chart({ id }) {
       [theme.breakpoints.down("md")]: {
         width: "100%",
         marginTop: 0,
+        height: 600,
+        padding: 20,
+        paddingTop: 0,
+      },
+      [theme.breakpoints.down("md")]: {
+        width: "100%",
+        marginTop: 0,
+        height: 300,
         padding: 20,
         paddingTop: 0,
       },
